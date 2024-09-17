@@ -1,6 +1,4 @@
 /* место для вашего кода */
-.header{
-}
 .header-menu{
     display: flex;
     padding-top: 92px;
@@ -10,7 +8,6 @@
     font-size: 18px;
 }
 .header-links-list-item{
-
     list-style-type:circle;
     display: flex;
     align-items: center;
@@ -235,14 +232,14 @@
 
 }
 .about-text-1{
-font-size: 20px;
-font-weight: 400;
-letter-spacing: 0.01em;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.01em;
 }
 .about-text-2{
-font-size: 20px;
-padding-top:24px;
-font-weight: 400;
+    font-size: 20px;
+    padding-top:24px;
+    font-weight: 400;
 }
 .about-text-2-span{
     letter-spacing: 0.04em;
@@ -277,6 +274,6 @@ font-weight: 400;
     gap: 48px;
 }
 .footer-social-icon{
-width: 48px;
-height: 48px;
+    width: 48px;
+    height: 48px;
 }
