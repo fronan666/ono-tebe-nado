@@ -1,1 +1,282 @@
 /* место для вашего кода */
+.header{
+}
+.header-menu{
+    display: flex;
+    padding-top: 92px;
+    flex:0 1 auto;
+    padding-left: 24px;
+    padding-bottom: 95px;
+    font-size: 18px;
+}
+.header-links-list-item{
+
+    list-style-type:circle;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.header-links-list-item_no-bullit{
+    list-style-type: none;
+    margin-left: 50.52px;
+}
+.header-link{
+    margin-left: 32px ;
+}
+.header-link_active{
+    margin-right: 36px;
+    margin-left: 32px ;
+}
+.header-logo{
+    width: 148px;
+    height: 105px;
+}
+.address{
+    display: flex;
+    flex-flow:column nowrap ;
+    justify-content: center;
+    margin-left: 184px;
+}  
+.cover{
+    width: 1100px;
+    height: 757px;
+    display: grid;
+    background-color: rgb(0 0 0/0.6);
+}   
+.overlay{
+    z-index: -1;
+    position: absolute;
+    width: 1100px;
+    height: 757px;
+}
+.cover-title{
+    color:white;
+    padding-left: 50px ;
+    padding-top: 165px ;
+    padding-bottom: 237px ;
+    padding-right: 50px ;
+    font-size: 100px;
+}   
+.aligned-text{
+    display: block;
+    text-align: start;
+    letter-spacing: 0.3em;
+}
+.aligned-text_center{
+    display: block;
+    text-align: center;
+    letter-spacing: 0.3em;
+
+}
+.aligned-right{
+    display: block;
+    text-align: end;
+    letter-spacing: 0.3em;
+}   
+.letter-spacing-extended{
+    letter-spacing: 0.6em;
+}
+.no-letter-spacing{
+    letter-spacing: 0em;
+}
+.cover-description{
+    position: absolute;
+    display: flex;
+    padding-left: 78px ;
+    padding-top: 655px ;
+    padding-bottom: 51px ;
+    padding-right: 50px ;
+    font-size: 22px;
+    width: 100%;
+}
+.cover-description-text{
+    color:white;  
+    align-items: center;
+    word-spacing:0.9em;
+    padding-right: 79px;
+    display: flex;
+}
+
+.bet-button{
+    background-color: transparent;
+    color:white;
+    font-size: 22px;
+    border: 1px solid white;
+    padding-left: 31px ;
+    padding-top: 12px ;
+    padding-bottom: 11px ;
+    padding-right: 32px ;        
+}
+.lots{
+    padding-left: 24px ;
+    padding-top: 179px ;
+    padding-right: 24px ;      
+    width: 1100px ;
+    height: 100%;
+    
+}
+.lots-heading{
+    font-size: 40px;
+    padding-left: 40px;
+    padding-bottom: 27px;
+}
+.card-link{
+    list-style-type: none;
+}
+.card {
+    display: flex;
+    column-gap:25px ;
+    width: 1100px ;
+}
+.card-type-film{
+    display: flex;
+    width:334px ;
+    height: 563px; 
+    background-color: rgb(0 0 0/0.6);
+}
+.card_type_book{
+    display: flex;
+    width:334px ;
+    height: 563px; 
+    background-color: rgb(0 0 0/0.6);
+}
+.card_type_picture{
+    display: flex;
+    width:334px ;
+    height: 563px; 
+    background-color: rgb(0 0 0/0.6);
+    
+}
+.overlay-card{
+    z-index: -1;
+    object-fit: cover;
+}
+.card_title{
+    font-weight: 700;
+    font-size: 22px;
+    position: absolute;
+    display: flex;
+    padding-left: 40px ;
+    padding-top: 51px ;
+    padding-right: 40px ;  
+    color: white;
+    white-space: normal;
+    width: 334px;
+    text-transform: uppercase;
+
+}
+.card-text{
+    font-size: 20px;
+    position: absolute;
+    display: flex;
+    padding-left: 40px ;
+    padding-right: 40px ;  
+    color: white;
+    width: 334px;
+    align-items:flex-end ;
+    height: 563px;
+    padding-bottom:48px ;
+
+}
+.lots__look-more-link{
+    list-style-type: none;
+    padding-left:40px;
+    padding-top: 30px;
+    padding-bottom: 2px;
+    font-size: 20px;
+}
+.about{
+    padding-left: 24px; 
+    padding-right: 24px;
+    margin-top:146px;
+    width: 1100px;
+    display: flex;
+    flex-direction: row;
+    height:595px;
+}
+.about-column{
+    flex-direction: column;
+    display: flex;
+}
+.about-logo{ 
+    background-color:black;
+    display: block;
+    height: 240px;
+    width: 240px;
+    margin-left:47px ;
+    margin-top:35px ;
+    border-radius: 50%;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-image-logo{
+    width: 100%;
+    height: 100%;
+    padding-left:46px ;
+    padding-right:46px ;
+    padding-top:63px ;
+    padding-bottom:63px ;
+
+}
+.about-content{
+    padding-left: 359px; 
+    padding-bottom: 13px;
+    padding-top:133px;
+    width: 100%;
+
+
+}
+.about-title{
+    padding-bottom: 100px;
+    text-transform: uppercase;
+    font-size: 40px;
+
+}
+.about-text-1{
+font-size: 20px;
+font-weight: 400;
+letter-spacing: 0.01em;
+}
+.about-text-2{
+font-size: 20px;
+padding-top:24px;
+font-weight: 400;
+}
+.about-text-2-span{
+    letter-spacing: 0.04em;
+}
+.footer{
+    display: flex;
+    padding-left: 50px; 
+    padding-right: 50px;
+    margin-top:180px;
+    width: 1100px;
+    height: 98px;
+    margin-bottom: 88px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 18px;
+}
+.footer-addres{
+    display: flex;
+    flex-flow:column nowrap ;
+}
+.footer-links-list-item{
+    list-style-type: none;
+    text-align: center;
+}
+.footer-social-list{
+    display: flex;
+}
+.footer-social-list-item{
+    list-style-type: none;
+    display: flex;
+    gap: 48px;
+}
+.footer-social-icon{
+width: 48px;
+height: 48px;
+}
