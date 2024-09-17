@@ -74,7 +74,6 @@
     display: block;
     text-align: center;
     letter-spacing: 0.3em;
-
 }
 
 .aligned-right {
@@ -127,7 +126,6 @@
     padding-right: 24px;
     width: 1100px;
     height: 100%;
-
 }
 
 .lots-heading {
@@ -165,7 +163,6 @@
     width: 334px;
     height: 563px;
     background-color: rgb(0 0 0/0.6);
-
 }
 
 .overlay-card {
@@ -253,15 +250,12 @@
     padding-bottom: 13px;
     padding-top: 133px;
     width: 100%;
-
-
 }
 
 .about-title {
     padding-bottom: 100px;
     text-transform: uppercase;
     font-size: 40px;
-
 }
 
 .about-text-1 {
