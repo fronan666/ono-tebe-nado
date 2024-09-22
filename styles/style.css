@@ -1,11 +1,10 @@
 /* место для вашего кода */
 .header-menu {
     display: flex;
-    padding-top: 92px;
-    flex: 0 1 auto;
+    padding-top: 95px;
     padding-left: 24px;
-    padding-bottom: 95px;
     font-size: 18px;
+    padding-bottom: 73px;
 }
 
 .header-links-list-item {
@@ -17,7 +16,7 @@
 
 .header-links-list-item_no-bullit {
     list-style-type: none;
-    margin-left: 50.52px;
+    margin-left: 28px;
 }
 
 .header-link {
@@ -25,34 +24,38 @@
 }
 
 .header-link_active {
-    margin-right: 36px;
-    margin-left: 32px;
+    text-decoration: none;
+
 }
 
-.header-logo {
-    width: 148px;
-    height: 105px;
+.header-logo-image {
+    width: 182px;
+    height: 148px;
+    padding-left: 38px;
+    margin-right: 184px;
 }
 
 .address {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    margin-left: 184px;
+    font-style: normal;
 }
 
 .cover {
-    width: 1100px;
-    height: 757px;
     display: grid;
-    background-color: rgb(0 0 0/0.6);
+    position: relative;
+    background-image: url(../images/cover.jpg);
+    background-size: cover;
+    background-position: center;
+
 }
 
 .overlay {
-    z-index: -1;
+    background-color: rgb(0 0 0/0.6);
+    width: 100%;
+    height: 100%;
     position: absolute;
-    width: 1100px;
-    height: 757px;
 }
 
 .cover-title {
@@ -62,6 +65,8 @@
     padding-bottom: 237px;
     padding-right: 50px;
     font-size: 100px;
+    z-index: 1;
+    text-transform: uppercase;
 }
 
 .aligned-text {
@@ -99,12 +104,13 @@
     padding-right: 50px;
     font-size: 22px;
     width: 100%;
+    text-transform: uppercase;
 }
 
 .cover-description-text {
     color: white;
     align-items: center;
-    word-spacing: 0.9em;
+    word-spacing: 0.8em;
     padding-right: 79px;
     display: flex;
 }
@@ -113,11 +119,12 @@
     background-color: transparent;
     color: white;
     font-size: 22px;
-    border: 1px solid white;
+    border: 1px solid currentColor;
     padding-left: 31px;
     padding-top: 12px;
     padding-bottom: 11px;
     padding-right: 32px;
+    text-transform: uppercase;
 }
 
 .lots {
@@ -125,81 +132,86 @@
     padding-top: 179px;
     padding-right: 24px;
     width: 1100px;
-    height: 100%;
+
 }
 
 .lots-heading {
     font-size: 40px;
     padding-left: 40px;
     padding-bottom: 27px;
+    text-transform: uppercase;
+
+}
+
+.lots-card-list-item {
+    width: 334px;
+    height: 563px;
+
+}
+
+.lots-card-list {
+    list-style-type: none;
+    display: flex;
+    gap: 24px;
 }
 
 .card-link {
-    list-style-type: none;
+    text-decoration: none;
 }
 
 .card {
+    width: 100%;
+    height: 100%;
     display: flex;
-    column-gap: 25px;
-    width: 1100px;
+    flex-direction: column;
+    position: relative;
+    justify-content: space-between;
+    background-size: cover;
+    background-position: center;
+
+
 }
 
-.card-type-film {
-    display: flex;
-    width: 334px;
-    height: 563px;
-    background-color: rgb(0 0 0/0.6);
+.card_type_film {
+    background-image: url(../images/card-lot-01.jpg);
 }
 
 .card_type_book {
-    display: flex;
-    width: 334px;
-    height: 563px;
-    background-color: rgb(0 0 0/0.6);
+    background-image: url(../images/card-lot-02.jpg);
 }
 
 .card_type_picture {
-    display: flex;
-    width: 334px;
-    height: 563px;
-    background-color: rgb(0 0 0/0.6);
-}
-
-.overlay-card {
-    z-index: -1;
-    object-fit: cover;
+    background-image: url(../images/card-lot-03.jpg);
 }
 
 .card_title {
     font-weight: 700;
     font-size: 22px;
-    position: absolute;
-    display: flex;
     padding-left: 40px;
     padding-top: 51px;
     padding-right: 40px;
     color: white;
-    white-space: normal;
-    width: 334px;
     text-transform: uppercase;
-
+    z-index: 1;
+    text-decoration: underline;
 }
 
 .card-text {
-    font-size: 20px;
-    position: absolute;
     display: flex;
+    font-size: 20px;
     padding-left: 40px;
     padding-right: 40px;
     color: white;
-    width: 334px;
-    align-items: flex-end;
-    height: 563px;
     padding-bottom: 48px;
+    z-index: 1;
 
 }
 
+
+
+
 .lots__look-more-link {
+    display: flex;
     list-style-type: none;
     padding-left: 40px;
     padding-top: 30px;
@@ -211,66 +223,70 @@
     padding-left: 24px;
     padding-right: 24px;
     margin-top: 146px;
-    width: 1100px;
+
     display: flex;
     flex-direction: row;
-    height: 595px;
+    min-height: 595px;
 }
 
 .about-column {
-    flex-direction: column;
+    flex-direction: row;
     display: flex;
+    width: 1100px;
+}
+
+.about-column-logo {
+    width: 563px;
+
 }
 
 .about-logo {
-    background-color: black;
-    display: block;
+    display: flex;
     height: 240px;
     width: 240px;
+    background-color: black;
+    border-radius: 50%;
     margin-left: 47px;
     margin-top: 35px;
-    border-radius: 50%;
-    position: absolute;
-    align-items: center;
-    justify-content: center;
+
 }
 
 .about-image-logo {
-    width: 100%;
-    height: 100%;
-    padding-left: 46px;
-    padding-right: 46px;
-    padding-top: 63px;
-    padding-bottom: 63px;
+    width: 148px;
+    height: 114px;
+    margin: auto;
 
 }
 
+
 .about-content {
-    padding-left: 359px;
     padding-bottom: 13px;
-    padding-top: 133px;
+    padding-top: 136px;
     width: 100%;
+
 }
 
 .about-title {
     padding-bottom: 100px;
     text-transform: uppercase;
     font-size: 40px;
+
 }
 
-.about-text-1 {
+.about-text {
     font-size: 20px;
     font-weight: 400;
     letter-spacing: 0.01em;
+
 }
 
-.about-text-2 {
+.about-text-next {
     font-size: 20px;
     padding-top: 24px;
     font-weight: 400;
 }
 
-.about-text-2-span {
+.about-text-next-span {
     letter-spacing: 0.04em;
 }
 
@@ -278,25 +294,29 @@
     display: flex;
     padding-left: 50px;
     padding-right: 50px;
-    margin-top: 180px;
+    padding-top: 163px;
     width: 1100px;
-    height: 98px;
-    margin-bottom: 88px;
+    padding-bottom: 88px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     font-size: 18px;
 }
 
-.footer-addres {
-    display: flex;
-    flex-flow: column nowrap;
+.footer_link {
+    contain: inline-size;
+}
+
+.footer-links-active {
+    contain: inline-size;
+    text-decoration: none;
 }
 
 .footer-links-list-item {
     list-style-type: none;
     text-align: center;
 }
+
 
 .footer-social-list {
     display: flex;
