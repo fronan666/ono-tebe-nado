@@ -107,7 +107,7 @@
     position: relative;
     padding-left: 78px;
     align-items: center;
-    padding-bottom: 8px;
+    padding-bottom: 10px;
 }
 
 .cover-description-text {
@@ -126,7 +126,8 @@
     font-family: Raleway, sans-serif;
     padding-left: 31px;
     padding-right: 32px;
-    height: 51px;
+    padding-top: 12px;
+    padding-bottom: 11px;
     font-size: 22px;
     display: flex;
     align-items: center;
